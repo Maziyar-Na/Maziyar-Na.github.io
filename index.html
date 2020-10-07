@@ -18,8 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">  
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS -->
@@ -57,7 +56,7 @@
                     <h4 class="degree">Ph.D. in Computer Science</h4>
                     <h5 class="meta">University of Colorado Boulder</h5><br />
                     <h5 class="meta">Computer Systems Lab</h5><br />
-                    <h5 class="meta">Research Area: Networkd Systems</h5><br />
+                    <h5 class="meta">Research Area: <br />Networked Systems<br />Virtualization<br />Computer Systems</h5><br />
                     <h5 class="meta">Adviser: Prof. Eric Keller</h5><br />
                     <div class="time">2018 - Expected: 2023</div>
                 </div><!--//item-->
@@ -94,7 +93,10 @@
             <section class="section summary-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>About</h2>
                 <div class="summary">
-                    <p>Brief overview: I'm currently a Ph.D. student at the University of Colorado Boulder. I major in Computer Science and I'm happy with that! ^__^. My research area is around Networked Systems and I'm doing RA under supervision of Prof. Eric Keller and glad to work with people in the Network and Security research Group in Computer Systems Lab. More specifically, I play around with Containers, Read Linux Kernel Code and try to mess it up :), am interested in Software Defined Networking and try to make Cloud Computing more efficient in terms of resource usage and utilization while I keep them fast enough. Currently, I am working on a project called Distributed Containers in which I hope to end up with a centralized orchestration system which will  improve resource utilization while it pretty much preserves Microservice application thoughput and latency compare to running it using famous orchestration systems like K8s.</p>
+                    <p>Brief overview: Currently, I'm a Ph.D. student at the University of Colorado Boulder. 
+					I major in Computer Science and I'm happy with that! ^__^. 
+					My research area is around Networked Systems and I'm doing RA under supervision of Prof. Eric Keller and glad to work with people in the Network and Security Research Group in Computer Systems Lab. 
+					More specifically, my research focus is on Cloud Computing, Virtualization technologies, Orchestration, Computer Networking, and Linux Kernel. Currently, I am working on a project called Distributed Containers in which I hope to end up with a centralized orchestration system that will improve resource utilization and resource efficiency, while it pretty much preserves Microservice applications thoughput and latency compare to running it using famous orchestration tools like K8s.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
@@ -109,7 +111,8 @@
                         <div class="company">Salesforce, Louisville, CO, USA</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Doing Summer internship as a member of the C360 team at Salesforce. </p>  
+                        <p>Implemented a proxy server for both REST and gRPC calls, intercepting REST and gRPC request/responses to generatestubs for Mocking purpose
+						<br />Software Engineer Intern at Data Manager Setup team, C360 product</p>  
                     </div><!--//details-->
                 </div><!--//item-->
 
@@ -153,7 +156,21 @@
 
             <section class="section experiences-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="far fa-newspaper"></i></span>Publication</h2>
-
+				
+				<div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Resource Management in Cloud Computing Using Machine Learning: A Survey</h3>
+                            <div class="time">14, Dec 2020 - 17, Dec 2020</div>
+                        </div><!--//upper-row-->
+                        <div class="company">19TH IEEE International Conference on Machine Learning and Applications, 2020</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Efficient  resource  management  in  cloud  computing research is a crucial problem because over-provisioning resources increases  costs  for  cloud  providers  and  cloud  customers;  under-provisioning  resources  increases  the  application  latency,  and  it may  violate  service  level  agreement,  which  eventually  makes cloud  providers  lose  their  customers  and  income.  As  a  result, researchers have been striving to develop optimal resource management in the cloud computing environments in different ways, such  as  container  placement,  job  scheduling  and  multi-resource scheduling. Machine learning techniques are extensively used in this  area.  In  this  paper,  we  present  a  comprehensive  survey on  the  projects  which  leveraged  machine  learning  techniques for   resource   management   solutions   in   the   cloud   computing environment. At the end, we provide a comparison between these works. Furthermore, we propose some future directions that willguide  researchers  to  advance  this  field</p>
+                        
+                    </div><!--//details-->
+                </div><!--//item-->
+				
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
@@ -191,10 +208,19 @@
                 <div class="intro">
                     <p>Here are some more recent and notable projects: </p>
                 </div><!--//intro-->
+				<div class="item">
+                    <span class="project-title"><a href="">Toccoa: Cloud-Scale Packet-Level Network Analytics in Software</a></span> - <span class="project-tagline">In submission to a top tier venue<br/> Design a general and flexible, packet-level, network analytics system on top of programmable switch</span>
+                    
+                </div><!--//item-->
                 <div class="item">
                     <span class="project-title"><a href="">Mini Internet</a></span> - <span class="project-tagline">Design and configure a backbone network running OSPF as IGP and BGP<br />having different customers, transit service and peers<br />applying routing policies based on the relashionships<br />using route reflection, redistribution for statically routed customers and BGP attributes for traffic manipulation<br />Tools: Cisco Router (IOS), GNS3 <br/> IP Routing course project</span>
                     
                 </div><!--//item-->
+				<div class="item">
+                    <span class="project-title"><a href="">Prediction and characterization of application power use in a high performance computing environment</a></span> - <span class="project-tagline">Machine Learning course project, Department of Computer Science, University of Colorado Boulder<br/> Re-implementing the paper and improving the results by using feature engineering techniques and adding LSTM</span>
+                    
+                </div><!--//item-->
+                <div class="item">
                 <div class="item">
                     <span class="project-title"><a href="">Rootkit Module in Linux</a></span> - <span class="project-tagline">Develop an LKM to intercept Linux kernel predefined syscall in order to change the ”ls” command functionality and a utility function which checks whether a syscall is changed in syscall table (Kernel version: 4.x) <br/> Advanced Operating Systems course project</span>
                     
@@ -220,6 +246,10 @@
                 </div><!--//item-->
                 <div class="item">
                     <span class="project-title"><a href="" target="_blank">Customs House Software</a></span> - <span class="project-tagline">An application related to Customs house procedures, Design (having prototype, Domain Modeling, System Sequence Diagram, Class Diagram, etc), implementation(C#, SQL Server database), Test(Unit Test, Integration Test)<br /> System Analysis & Design course project</span>
+                </div><!--//item-->
+				<div class="item">
+                    <span class="project-title"><a href="">Genetic Algorithm</a></span> - <span class="project-tagline">Artificial Intelligence course project, Department of Electrical & Computer Engineering, University of Tehran<br/> An algorithm using Genetic approach to solve a minimization problem</span>
+                    
                 </div><!--//item-->
             </section><!--//section-->
             
