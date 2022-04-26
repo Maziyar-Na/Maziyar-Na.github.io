@@ -93,10 +93,7 @@
             <section class="section summary-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>About</h2>
                 <div class="summary">
-                    <p>Brief overview: Currently, I'm a Ph.D. student at the University of Colorado Boulder.
-					I major in Computer Science and I'm happy with that! ^__^.
-					My research area is around Networked Systems and I'm doing RA under supervision of Prof. Eric Keller and glad to work with people in the Network and Security Research Group in Computer Systems Lab.
-					More specifically, my research focus is on Cloud Computing, Virtualization technologies, Orchestration, Serverless, Machine Learning and Linux Kernel. Currently, I am working on a project called Distributed Containers in which I hope to end up with a centralized orchestration system that will improve resource utilization and resource efficiency, while it pretty much preserves Microservice applications thoughput and latency compare to running it using famous orchestration tools like K8s.</p>
+                    <p>Welcome! <br />I'm currently a Ph.D. student at The University of Colorado Boulder. I major in Computer Science and currently, my research focuses are Serverless Computing, and Intersection of Machine Learning and Networked Systems. I also work as a research assistant under supervision of Prof. Eric Keller. Feel free to reach out if you're interested!</p>
                 </div><!--//summary-->
             </section><!--//section-->
 
@@ -123,7 +120,7 @@
                         <div class="company">Salesforce, Louisville, CO, USA</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Implemented a proxy server for both REST and gRPC calls, intercepting REST and gRPC request/responses to generatestubs for Mocking purpose
+                        <p>Design and implementation of a proxy server for both REST and gRPC calls, intercepting REST and gRPC request/responses to generate stubs for Mocking purpose
 						<br />Software Engineer Intern at Data Manager Setup team, C360 product</p>
                     </div><!--//details-->
                 </div><!--//item-->
@@ -137,8 +134,7 @@
                         <div class="company">Computer Systems Lab, University of Colorado Boulder, CO, USA</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>As a research assistant, I started working on a project called Toccoa. Generally speaking, this project is about cloud-scale packet-Level network analytics in software. </p>
-                        <p>Another project which I have been working on roughly for a year, is called Distributed Container. Essentially, this is a manager implemented alongside with K8s which monitors containers deployed on physical hosts, gathers info about them and make decisions like setting some knobs/resource limits/etc dynamically in runtime to achieve higher resource utilization while preserving throughput</p>
+                        <p>Currently my research focus is on Serverless Computing, and intersection of machine learing/deep learning and networked systems.</p>
 
                     </div><!--//details-->
                 </div><!--//item-->
@@ -168,78 +164,102 @@
 
             <section class="section experiences-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="far fa-newspaper"></i></span>Publication</h2>
+                    <div class="item">
+                            <div class="meta">
+                                    <div class="upper-row">
+                                            <h3 class="job-title">Escra: Event-driven, Sub-second Container Resource Allocation</h3>
+                                            <div class="time">July 2022</div>
+                                    </div><!--//upper-row-->
+                                    <div class="company">ICDCS 2022: 42nd IEEE International Conference on Distributed Computing Systems </div>
+                            </div><!--//meta-->
+                            <div class="details">
+                                    <p>This paper pushes the limits of automated resource allocation in container environments. Recent works set container CPU and memory limits by automatically scaling containers based on past resource usage.However, these systems are heavy-weight and run on coarse-grained time scales, resulting in poor performance when predictions are incorrect.We propose Escra, a container orchestrator that enables fine-grained, event-based resource allocation for a single container and distributed resource allocation to manage a collection of containers.Escra performs resource allocation on sub-second intervals within and across hosts, allowing operators to cost-effectively scale resources without performance penalty. We evaluate Escra on two types of containerized applications: microservices and serverless functions.In microservice environments, fine-grained and event-based resource allocation can reduce application latency by up to 96.9% and increase throughput by up to 3.2x when compared against the current state-of-the-art. Escra can increase performance while simultaneously reducing 50th and 99th%ile CPU waste by over 10x and 3.2x, respectively.In serverless environments, Escra can reduce CPU reservations by over 2.1x and memory reservations by more than 2x while maintaining similar end-to-end performance.</p>
+                            </div><!--//details-->
+                    </div><!--//item-->
+                    <div class="item">
+                            <div class="meta">
+                                    <div class="upper-row">
+                                            <h3 class="job-title">Optimizing and Extending Serverless Platforms: A Survey</h3>
+                                            <div class="time">Dec 2021</div>
+                                    </div><!--//upper-row-->
+                                    <div class="company">SDS 2021: The Eighth International Conference on Software Defined Systems </div>
+                            </div><!--//meta-->
+                            <div class="details">
+                                    <p>Serverless Computing is a new cloud computing paradigm wherein people in academia and industry are actively proposing either interesting improvements or building excellent applications on top of it. AWS, Google Cloud, Microsoft Azure, and IBM are popular samples of public clouds that offer Function-as-a-Service on top of their Serverless Computing platforms. Although this paradigm has had numerous advantages for software developers and programmers, it has introduced new challenges to cloud providers. Factors like fine-grained pricing and pay-as-you-go manner, eliminating the responsibility of resource management on the developer side, promises of elasticity and highly-available service, fault tolerance, auto-scaling, and being able to run embarrassingly parallel jobs make it a suitable platform for developers. On the other hand, efficient resource management, offering low-latency service, and providing proper security/isolation have been partly the main challenges introduced on the cloud provider side. This paper presents a literature review on today's Serverless platform optimizations and extensions that people have proposed and implemented to  further capitalize the Serverless infrastructure. In the end, we will provide the current Serverless paradigm's limitations and a few future directions and research opportunities regarding Serverless Computing.</p>
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/9732138">Survey Paper</a>
+                            </div><!--//details-->
+                    </div><!--//item-->
+					<div class="item">
+							<div class="meta">
+									<div class="upper-row">
+											<h3 class="job-title">SmartOS: towards automated learning and user-adaptive <br />resource allocation in operating systems</h3>
+											<div class="time">Aug 2021</div>
+									</div><!--//upper-row-->
+									<div class="company">APSys '21: Proceedings of the 12th ACM SIGOPS Asia-Pacific Workshop on Systems</div>
+							</div><!--//meta-->
+							<div class="details">
+									<p>Today's operating systems typically apply a one-size-fits-all approach to resource management, such as applying a scheduler that treats all processes of equal importance. The goal of this paper is to explore a learning-based approach to resource management in modern operating systems in which the OS automatically learns what tasks the user deems to be most important at that time and seamlessly adjusts allocation of CPU, memory, I/O, and network bandwidth to prioritize user preferences on demand. We demonstrate an implementation of such a learning-based OS in Linux and present evaluation results showing that a reinforcement learning-based approach can rapidly learn and adjust system resources to meet user demands.</p>
+									<a href="https://dl.acm.org/doi/abs/10.1145/3476886.3477519?sid=SCITRUS">SmartOS Paper</a>
+							</div><!--//details-->
+					</div><!--//item-->
 
-								<div class="item">
-										<div class="meta">
-												<div class="upper-row">
-														<h3 class="job-title">SmartOS: towards automated learning and user-adaptive <br />resource allocation in operating systems</h3>
-														<div class="time">Aug 2021</div>
-												</div><!--//upper-row-->
-												<div class="company">APSys '21: Proceedings of the 12th ACM SIGOPS Asia-Pacific Workshop on Systems</div>
-										</div><!--//meta-->
-										<div class="details">
-												<p>Today's operating systems typically apply a one-size-fits-all approach to resource management, such as applying a scheduler that treats all processes of equal importance. The goal of this paper is to explore a learning-based approach to resource management in modern operating systems in which the OS automatically learns what tasks the user deems to be most important at that time and seamlessly adjusts allocation of CPU, memory, I/O, and network bandwidth to prioritize user preferences on demand. We demonstrate an implementation of such a learning-based OS in Linux and present evaluation results showing that a reinforcement learning-based approach can rapidly learn and adjust system resources to meet user demands.</p>
-												<a href="https://dl.acm.org/doi/abs/10.1145/3476886.3477519?sid=SCITRUS">SmartOS Paper</a>
-										</div><!--//details-->
-								</div><!--//item-->
+					<div class="item">
+							<div class="meta">
+									<div class="upper-row">
+											<h3 class="job-title">Software Packet-Level Network Analytics at Cloud Scale<br /></h3>
+											<div class="time">Feb 2021</div>
+									</div><!--//upper-row-->
+									<div class="company">IEEE Transactions on Network and Service Management</div>
+							</div><!--//meta-->
+							<div class="details">
+									<p>As networks grow in speed, scale, and complexity, operating them reliably requires continuous monitoring and increasingly sophisticated analytics. Because of these requirements, the platforms that support analytics in cloud-scale networks face demands for both higher throughput (to keep up with high packet rates) and increased generality and programmability (to cover a wider range of applications). Recent proposals have worked toward these goals by offloading analytics application logic to line-rate programmable data plane hardware, as scaling existing software analytics platforms is prohibitively expensive. The rigid design and constrained resources of data plane devices, however, fundamentally limit the types of analysis and the number of tasks that can run concurrently. In this article, we demonstrate that generality need not be sacrificed for high performance. Rather than offloading entire analytics applications to hardware, the core idea of our work is to offload only critical preprocessing tasks that are shared among applications (e.g., load balancing) to a line-rate hardware frontend while optimizing the core analytics software to exploit properties of network analytics workloads. Based on this design, we present Jetstream, a hybrid platform for network analytics that can run custom software-based analytics pipelines at throughputs of up to 250 million packets per second on a 16-core commodity server. Jetstream makes sophisticated, network-wide packet analytics feasible without compromising on generality or performance.
+									</p>
+									<a href="https://ieeexplore.ieee.org/abstract/document/9352981">Toccoa Paper</a>
+							</div><!--//details-->
+					</div><!--//item-->
 
-								<div class="item">
-										<div class="meta">
-												<div class="upper-row">
-														<h3 class="job-title">Software Packet-Level Network Analytics at Cloud Scale<br /></h3>
-														<div class="time">Feb 2021</div>
-												</div><!--//upper-row-->
-												<div class="company">IEEE Transactions on Network and Service Management</div>
-										</div><!--//meta-->
-										<div class="details">
-												<p>As networks grow in speed, scale, and complexity, operating them reliably requires continuous monitoring and increasingly sophisticated analytics. Because of these requirements, the platforms that support analytics in cloud-scale networks face demands for both higher throughput (to keep up with high packet rates) and increased generality and programmability (to cover a wider range of applications). Recent proposals have worked toward these goals by offloading analytics application logic to line-rate programmable data plane hardware, as scaling existing software analytics platforms is prohibitively expensive. The rigid design and constrained resources of data plane devices, however, fundamentally limit the types of analysis and the number of tasks that can run concurrently. In this article, we demonstrate that generality need not be sacrificed for high performance. Rather than offloading entire analytics applications to hardware, the core idea of our work is to offload only critical preprocessing tasks that are shared among applications (e.g., load balancing) to a line-rate hardware frontend while optimizing the core analytics software to exploit properties of network analytics workloads. Based on this design, we present Jetstream, a hybrid platform for network analytics that can run custom software-based analytics pipelines at throughputs of up to 250 million packets per second on a 16-core commodity server. Jetstream makes sophisticated, network-wide packet analytics feasible without compromising on generality or performance.
-												</p>
-												<a href="https://ieeexplore.ieee.org/abstract/document/9352981">Toccoa Paper</a>
-										</div><!--//details-->
-								</div><!--//item-->
+					<div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Resource Management in Cloud Computing Using Machine Learning: <br />A Survey</h3>
+                                <div class="time">Dec 2020</div>
+                            </div><!--//upper-row-->
+                            <div class="company">19TH IEEE International Conference on Machine Learning and Applications, 2020</div>
+                        </div><!--//meta-->
+                        <div class="details">
+                            <p>Efficient  resource  management  in  cloud  computing research is a crucial problem because over-provisioning resources increases  costs  for  cloud  providers  and  cloud  customers;  under-provisioning  resources  increases  the  application  latency,  and  it may  violate  service  level  agreement,  which  eventually  makes cloud  providers  lose  their  customers  and  income.  As  a  result, researchers have been striving to develop optimal resource management in the cloud computing environments in different ways, such  as  container  placement,  job  scheduling  and  multi-resource scheduling. Machine learning techniques are extensively used in this  area.  In  this  paper,  we  present  a  comprehensive  survey on  the  projects  which  leveraged  machine  learning  techniques for   resource   management   solutions   in   the   cloud   computing environment. At the end, we provide a comparison between these works. Furthermore, we propose some future directions that willguide  researchers  to  advance  this  field</p>
 
-								<div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Resource Management in Cloud Computing Using Machine Learning: <br />A Survey</h3>
-                            <div class="time">Dec 2020</div>
-                        </div><!--//upper-row-->
-                        <div class="company">19TH IEEE International Conference on Machine Learning and Applications, 2020</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Efficient  resource  management  in  cloud  computing research is a crucial problem because over-provisioning resources increases  costs  for  cloud  providers  and  cloud  customers;  under-provisioning  resources  increases  the  application  latency,  and  it may  violate  service  level  agreement,  which  eventually  makes cloud  providers  lose  their  customers  and  income.  As  a  result, researchers have been striving to develop optimal resource management in the cloud computing environments in different ways, such  as  container  placement,  job  scheduling  and  multi-resource scheduling. Machine learning techniques are extensively used in this  area.  In  this  paper,  we  present  a  comprehensive  survey on  the  projects  which  leveraged  machine  learning  techniques for   resource   management   solutions   in   the   cloud   computing environment. At the end, we provide a comparison between these works. Furthermore, we propose some future directions that willguide  researchers  to  advance  this  field</p>
+                        </div><!--//details-->
+                    </div><!--//item-->
 
-                    </div><!--//details-->
-                </div><!--//item-->
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">(Poster) Efficient Microservices with Elastic Containers</h3>
+                                <div class="time">Dec 2019</div>
+                            </div><!--//upper-row-->
+                            <div class="company">Proceedings of the 15th International Conference on emerging Networking EXperiments and Technologies (CoNEXT)</div>
+                        </div><!--//meta-->
+                        <div class="details">
+                            <p>Containers are a popular mechanism used among application developers when deploying their systems on cloud platforms. Both developers and cloud providers are constantly looking to simplify container management, provisioning, and monitoring. In this paper, we present a container management layer that sits beside a container orchestrator that runs, what we call, Elastic Containers. Each elastic container contains multiple subcontainers that are connected to a centralized Global Cloud Manager (GCM). The GCM gathers subcontainer resource utilization information directly from inside each kernel running the subcontainers. The GCM then tries to efficiently and optimally distribute resources between the application subcontainers residing on a distributed environment.</p>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3360468.3368180">Elastic Containers Paper</a>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">(Poster) Efficient Microservices with Elastic Containers</h3>
-                            <div class="time">Dec 2019</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Proceedings of the 15th International Conference on emerging Networking EXperiments and Technologies (CoNEXT)</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Containers are a popular mechanism used among application developers when deploying their systems on cloud platforms. Both developers and cloud providers are constantly looking to simplify container management, provisioning, and monitoring. In this paper, we present a container management layer that sits beside a container orchestrator that runs, what we call, Elastic Containers. Each elastic container contains multiple subcontainers that are connected to a centralized Global Cloud Manager (GCM). The GCM gathers subcontainer resource utilization information directly from inside each kernel running the subcontainers. The GCM then tries to efficiently and optimally distribute resources between the application subcontainers residing on a distributed environment.</p>
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3360468.3368180">Elastic Containers Paper</a>
+                        </div><!--//details-->
+                    </div><!--//item-->
 
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Shimmy: Shared Memory Channels for High Performance Inter-Container Communication</h3>
-                            <div class="time">July 2019</div>
-                        </div><!--//upper-row-->
-                        <div class="company">USENIX Workshop on Hot Topics in Edge Computing (HotEdge 19), USENIX Association, 2019</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Abstract: With the increasing need for more reactive services, and theneed to process large amounts of IoT data, edge clouds are emerging to enable applications to be run close to the users and/or devices. Following the trend in hyperscale clouds, applications are trending toward a microservices architecture where the application is decomposed into smaller pieces that can each run in its own container and communicate with each other over a network through well defined APIs. This improves the development effort and deployability, but also introduces inefficiencies in communication. In this paper, we rethink the communication model, and introduce the ability tocreate shared memory channels between containers supporting both a pub/sub model and streaming model. Our approachis not only applicable to the edge clouds but also beneficial incore cloud environments. Local communication is made more efficient, and remote communication is efficiently supported through synchronizing shared memory regions via RDMA. </p>
-                        <a href="https://www.usenix.org/conference/hotedge19/presentation/abranches">Shimmy Paper</a>
-                    </div><!--//details-->
-                </div><!--//item-->
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">Shimmy: Shared Memory Channels for High Performance Inter-Container Communication</h3>
+                                <div class="time">July 2019</div>
+                            </div><!--//upper-row-->
+                            <div class="company">USENIX Workshop on Hot Topics in Edge Computing (HotEdge 19), USENIX Association, 2019</div>
+                        </div><!--//meta-->
+                        <div class="details">
+                            <p>Abstract: With the increasing need for more reactive services, and theneed to process large amounts of IoT data, edge clouds are emerging to enable applications to be run close to the users and/or devices. Following the trend in hyperscale clouds, applications are trending toward a microservices architecture where the application is decomposed into smaller pieces that can each run in its own container and communicate with each other over a network through well defined APIs. This improves the development effort and deployability, but also introduces inefficiencies in communication. In this paper, we rethink the communication model, and introduce the ability tocreate shared memory channels between containers supporting both a pub/sub model and streaming model. Our approachis not only applicable to the edge clouds but also beneficial incore cloud environments. Local communication is made more efficient, and remote communication is efficiently supported through synchronizing shared memory regions via RDMA. </p>
+                            <a href="https://www.usenix.org/conference/hotedge19/presentation/abranches">Shimmy Paper</a>
+                        </div><!--//details-->
+                    </div><!--//item-->
 
 
             </section><!--//section-->
